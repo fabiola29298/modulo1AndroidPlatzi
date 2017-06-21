@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
+
+    tools:context="com.dojoandroid.platzi1.view.Container2Activity">
+    <include layout="@layout/buttombar"></include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/bottombar_height"
+            />
+
+
+        <android.support.design.widget.BottomNavigationView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/bottombar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottombar_height"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|end"
+            app:bb_inActiveTabColor="@android:color/white"
+            app:bb_activeTabColor="@android:color/white"
+            app:bb_tabXmlResource="@xml/bottombar_tabs"
+            />
+    </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

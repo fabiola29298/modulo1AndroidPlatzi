@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="user">Username</string>
+    <string name="hint_password">contraseña</string>
+    <string name="text_buton_login">LOGIN</string>
+    <string name="no_tienes_cuenta">No tienes cuenta?</string>
+    <string name="hint_account_usuario">Usuario</string>
+    <string name="hint_correo">Correo</string>
+    <string name="hint_nombre">Nombre</string>
+    <string name="text_buton_aceptar">ACEPTAR</string>
+    <string name="tab_search">Search</string>
+</resources>
